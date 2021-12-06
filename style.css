@@ -1,0 +1,427 @@
+:root {
+  --clr-gray: hsl(0,0%,6%);
+  --clr-neon: hsl(317 100% 54%);
+  --clr-whatsapp: hsl(126,55%,55%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Ubuntu,sans-serif,system-ui;
+  line-height: 1.9rem;
+}
+
+header {
+  background-color: var(--clr-gray);
+}
+
+footer {
+  background-color: var(--clr-gray);
+  color: lightgray;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-container{
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 4rem;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  box-shadow: 0 1px  2px var(--clr-gray);
+}
+
+.header-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+}
+
+.header-burger {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1em;
+  font-size: 1.5rem;
+}
+
+.nav-span {
+  display: none;
+}
+
+.nav-icon {
+  font-size: 2rem;
+  border: 2px currentColor solid;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.nav-link {
+  text-decoration:  none;
+  color: #fff;
+  transition: color 300ms, text-shadow 300ms;
+}
+
+.nav-link:hover {
+  color: var(--clr-neon);
+  text-shadow: 0 0 0.5em  var(--clr-neon) ;
+}
+
+.top-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: gray;
+  padding-top: 12rem;
+  background: url(img/top-bg.jpg) center/cover no-repeat;
+  color: hsla(0 0% 100% / .7); 
+}
+
+.top-heading {
+  font-size: 4.7rem;
+  line-height: 5rem;
+  padding: 3rem;
+}
+
+.area-heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 3rem 0 2.5rem 0;
+  text-align: center;
+}
+
+.top-link {
+  font-size: 4rem;
+  text-decoration: none;
+  color: hsla(0 0% 100% / .7);
+  transition: color 300ms;
+}
+
+.top-link:hover {
+  color: hsla(0 0% 100% / 1);
+}
+
+.employee-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employee-card {
+  box-shadow: 0 0 10px hsl(0,0%,21%);
+  transition: box-shadow 300ms;
+  max-width: 250px;
+}
+
+.employee-card:hover {
+  box-shadow: 0 0 10px var(--clr-neon);
+}
+
+.employee-info {
+  padding: 0.5rem;
+  background-color: #fbfaf8;
+}
+
+.relative {
+  position: relative;
+}
+
+.employee-whatsapp {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1rem;
+  font-size: 4rem;
+  color: hsl(0, 0%, 100%);
+  transition: color 300ms;
+}
+
+.employee-whatsapp:hover {
+  color:  var(--clr-whatsapp);
+}
+
+.employee-photo {
+  max-width: 250px;
+}
+
+.employee-name {
+  font-size: 1rem;
+}
+
+.bi-whatsapp {
+  text-align: center;
+}
+
+.price-area{
+  background-color: var(--clr-gray);
+  color: #fff;
+  text-align: center;
+}
+
+.price-card {
+  border-bottom: 1px lightgray solid;
+  padding: 1rem;
+}
+
+.price-card > h5 {
+  padding-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.price-card > p {
+  color: lightgray;
+}
+
+.top-border {
+  border-top: 1px lightgray solid;
+}
+
+.area-link {
+  display: block;
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+
+.advantages-cards {
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b c";
+  gap: 1rem;
+}
+
+.advantages-card {
+  display: flex;
+}
+
+.bi-check-circle-fill{
+  align-self: center;
+  font-size: 2rem;
+  padding: 0 1rem;
+  color: hsl(206,89%,54%);
+}
+
+.dark-gray {
+  color: hsl(0,0%,21%);
+}
+
+.advantages-heading {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.advantages-card:nth-child(1) {
+  grid-area: a;
+}
+
+.staff-area {
+  padding-top: 5rem;
+}
+
+.staff-cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.staff-cards > .employee-card {
+  margin: 0 auto;
+}
+
+.programs-area {
+  padding-top: 5rem;
+  font-size: 0.95rem;
+}
+
+.program-type {
+  font-size: 1.5rem;
+  font-weight: 450;
+  padding: 2rem 0;
+}
+
+.program-name {
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.program-include {
+}
+
+.program-description {
+  color: hsl(0,0%,40%);
+}
+
+.lock {
+  overflow: hidden;
+}
+
+@media (max-width:  1080px) {
+  .top-heading {
+    font-size: 5.5vw;
+    line-height: 5rem;
+    padding: 3rem;
+  }
+
+  .top-link {
+    font-size: 5.5vw;
+  }
+}
+
+@media (max-width:  1000px) {
+  .staff-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:  900px) {
+  .employee-cards {
+    flex-direction: column;
+    gap: 1rem;
+
+  }
+  .employee-card {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:  820px) {
+  .program-type {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+
+  .advantages-cards {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+    gap: 1rem;
+  }
+
+  .price-card > h5 {
+    font-size: 1.1rem;
+  }
+
+  .area-heading {
+    font-size: 2rem;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .nav-span {
+    display: block;
+  }
+
+  .nav-list {
+    gap: 2em;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 0%;
+
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2em;
+
+    background: var(--clr-gray);
+
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+
+  .nav-list.active {
+    transform: translateX(0%);
+  }
+
+  .header-burger{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 30px;
+    height: 20px;
+    top: 2rem;
+    right: 2rem;
+  }
+  .header-burger span{
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header-burger:before,
+  .header-burger:after{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header-burger:before{
+    top: 0;
+  }
+  .header-burger:after{
+    bottom: 0;
+  }
+  .header-burger.active:before{
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header-burger.active:after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header-burger.active span{
+    transform: scale(0);
+  }
+}
+
+@media (max-width:  630px) {
+  .staff-cards {
+    grid-template-columns: 1fr;
+  }
+}
