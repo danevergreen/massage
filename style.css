@@ -14,7 +14,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: Ubuntu,sans-serif,system-ui;
+  font-family: "Montserrat",sans-serif,system-ui;
   line-height: 1.9rem;
 }
 
@@ -121,6 +121,7 @@ footer {
   font-size: 4.7rem;
   line-height: 5rem;
   padding: 3rem;
+
 }
 
 .area-heading {
@@ -272,14 +273,18 @@ footer {
 }
 
 .program-type {
-  font-size: 1.5rem;
-  font-weight: 450;
-  padding: 2rem 0;
+  font-family: "Caveat-Regular", sans-serif;
+  font-size: 2rem;
+  font-weight: 550;
+  padding-top: 2rem;
 }
 
 .program-name {
-  font-size: 1rem;
-  font-weight: 550;
+  font-family: "Caveat-Regular", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 450; 
+  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 
 .program-include {
@@ -337,16 +342,39 @@ footer {
   background: url('img/caret-right.svg') 0 0 / 100% no-repeat;
 }
 
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.slick-dots li {
+  list-style: none;
+}
+
+.slick-dots button {
+  font-size: 0rem;
+  width: 6vw;
+  border: 2px solid hsla(317 100% 54% / .7);
+}
+
+.slick-dots > li.slick-active button {
+  font-size: 0rem;
+  width: 6vw;
+  border: 3px solid hsla(317 100% 54% / .9);
+}
+
 
 @media (max-width:  1080px) {
   .top-heading {
-    font-size: 5.5vw;
+    font-size: 6vw;
     line-height: 5rem;
     padding: 3rem;
   }
 
   .top-link {
-    font-size: 5.5vw;
+    font-size: 7vw;
   }
 }
 
@@ -470,3 +498,21 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+@font-face {
+/* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)*/
+font-family: "Caveat-Regular"; 
+/* адрес шрифта и тип*/
+src: url("fonts/Caveat-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+/* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)*/
+font-family: "Montserrat"; 
+/* адрес шрифта и тип*/
+src: url("fonts/Montserrat-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
