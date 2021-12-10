@@ -14,7 +14,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: "Montserrat",sans-serif,system-ui;
+  font-family: "Montserrat-Regular",sans-serif,system-ui;
   line-height: 1.9rem;
 }
 
@@ -136,6 +136,7 @@ footer {
   text-decoration: none;
   color: hsla(0 0% 100% / .7);
   transition: color 300ms;
+  padding-bottom: 2rem;
 }
 
 .top-link:hover {
@@ -273,25 +274,25 @@ footer {
 }
 
 .program-type {
-  font-family: "Caveat-Regular", sans-serif;
-  font-size: 2rem;
-  font-weight: 550;
+  font-family: "Lobster-Regular", sans-serif;
+  font-size: 1.7rem;
   padding-top: 2rem;
 }
 
 .program-name {
-  font-family: "Caveat-Regular", sans-serif;
-  font-size: 1.7rem;
-  font-weight: 450; 
+  font-family: "Lobster-Regular", sans-serif;
+  font-size: 1.5rem;
   padding-bottom: 1rem;
   padding-top: 2rem;
 }
 
 .program-include {
+  font-size: 1.2rem;
 }
 
 .program-description {
   color: hsl(0,0%,40%);
+  font-size: 1.2rem;
 }
 
 .lock {
@@ -353,12 +354,15 @@ footer {
   list-style: none;
 }
 
+.slick-dots button:focus,
 .slick-dots button {
+  border: none;
   font-size: 0rem;
   width: 6vw;
   border: 2px solid hsla(317 100% 54% / .7);
 }
 
+.slick-dots > li.slick-active button:focus,
 .slick-dots > li.slick-active button {
   font-size: 0rem;
   width: 6vw;
@@ -502,16 +506,14 @@ footer {
 
 @font-face {
 /* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)*/
-font-family: "Caveat-Regular"; 
+font-family: "Lobster-Regular"; 
 /* адрес шрифта и тип*/
-src: url("fonts/Caveat-Regular.ttf") format("truetype"); 
+src: url("fonts/Lobster-Regular.ttf") format("truetype"); 
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face {
-/* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)*/
-font-family: "Montserrat"; 
-/* адрес шрифта и тип*/
+font-family: "Montserrat-Regular"; 
 src: url("fonts/Montserrat-Regular.ttf") format("truetype"); 
 font-style: normal; 
 font-weight: normal; 
